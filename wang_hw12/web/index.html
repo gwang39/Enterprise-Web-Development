@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html  lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Beartooth Hiking Company (BHC)</title>
+  </head>
+
+
+  <body>
+    <h1>Beartooth Hiking Company (BHC)</h1> 
+    <h1><img src="http://www.jhuep.com/~spiegel/en605681/Images/Beartooth002-01.jpg" alt="TopPic"></h1>  
+        
+     <hr>  
+    <h2>Get A Quote:</h2>
+    
+    <form action="/wang_hw12/webresources/quote/" method=POST>
+        
+    Choose a tour
+    <select name="tour">
+        <option value="Gardiner Lake">Gardiner Lake</option>
+        <option value="Hellroaring Plateau">Hellroaring Plateau</option>
+        <option value="Beaten Path">Beaten Path</option>
+    </select>
+    <br>
+    <br>
+       Party Size(1-10)
+       <input type="TEXT" name="size" value="">
+    <br>
+    <br>       
+     <label>Start date: </label>
+       Year
+       <input type="TEXT" name="year" value="YYYY">
+       Month
+       <input type="TEXT" name="month" value="MM">
+       Day
+       <input type="TEXT" name="day" value="DD">
+    <br>
+    <br>
+       Duration(see chart above for valid durations):
+       <input type="TEXT" name="duration" value="X">
+       Days
+    <br>
+    <br>
+    <input type="SUBMIT" value="Get A Quote">
+    </form>
+    
+    <hr>
+    
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<%-- 
+    Document   : index
+    Created on : Jul 12, 2018, 11:50:31 PM
+    Author     : guany
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html  lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+body 
+{
+  font-family: Calibri, Helvetica, sans-serif;
+  font-size: normal;
+  font-weight: bold;
+  margin-left: 30px;
+  color: black;
+}
+
+
+
+table, td 
+{
+    border: 1px solid black;
+}
+
+
+th 
+{
+  font-family: Calibri, Helvetica, sans-serif;
+  font-size: normal;
+  background-color: #9999FF;
+  border: 1px
+}
+
+h1 
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: blue;
+}
+
+p2 
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: normal;
+  font-weight: bold;
+  color: red;
+}
+
+h2
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: orange;
+}
+  </style>
+    <title>Beartooth Hiking Company (BHC)</title>
+  </head>
+
+
+  <body>
+    <h1>Beartooth Hiking Company (BHC)</h1>
+    <h1><img src="http://www.jhuep.com/~spiegel/en605681/Images/Beartooth002-01.jpg" alt="TopPic"></h1>
+
+
+    <ul>
+      <li>Hiking Tour Route
+      <ul>
+        <li>Gardiner Lake
+        <li>The Hellroaring Plateau
+        <li>The Beaten Path
+      </ul>
+      </li>
+    </ul>
+
+    
+
+    
+    <table>
+      <caption>Route Details</caption>
+      <tr>
+        <th>Tour</th>
+        <th>Length</th>
+        <th>Cost</th>
+        <th>Difficulty</th>
+        <th>Photo</th>
+      </tr>
+      <tr>
+        <td>Gardiner Lake</td>
+        <td>3 or 5 days</td>
+        <td>$40/day</td>
+        <td>Intermediate</td>
+        <td><img src="http://www.jhuep.com/~spiegel/en605681/Images/BeartoothIslandLakeTrail_0326_800x600.jpg" width="100" height="80" alt="Route1">
+</td>
+      </tr>
+      <tr>
+        <td>The Hellroaring Plateau</td>
+        <td>2,3, or 4 days</td>
+        <td>$35/day</td>
+        <td>Easy</td>
+        <td><img src="http://www.jhuep.com/~spiegel/en605681/Images/TetonTrail-2_800x600.jpg" width="100" height="80" alt="Route2">
+      </tr>
+      <tr>
+        <td>The Beaten Path </td>
+        <td>5 or 7 days</td>
+        <td>$45/day</td>
+        <td>Difficult</td>
+        <td><img src="http://www.jhuep.com/~spiegel/en605681/Images/BeartoothView_800x600.jpg" width="100" height="80" alt="Route3">
+      </tr>
+      <tr>
+        <td colspan="5">Note: all hikes have a 50% surcharge for Sat/Sun hikes.</td>
+      </tr>
+    </table>
+    
+        
+        
+        
+    <h2>Get A Quote:</h2>
+    
+    <form action="wang_sr1" method=GET>
+        
+    Choose a tour
+    <select name="tour">
+        <option value="Gardiner Lake">Gardiner Lake</option>
+        <option value="Hellroaring Plateau">Hellroaring Plateau</option>
+        <option value="Beaten Path">Beaten Path</option>
+    </select>
+    <br>
+    <br>
+     <label>Start date: </label>
+       Year
+       <input type="TEXT" name="year" value="YYYY">
+       Month
+       <input type="TEXT" name="month" value="MM">
+       Day
+       <input type="TEXT" name="day" value="DD">
+    <br>
+    <br>
+       Duration(see chart above for valid durations):
+       <input type="TEXT" name="duration" value="X">
+       Days
+    <br>
+    <br>
+    <input type="SUBMIT" value="Get A Quote">
+    </form>
+    
+        
+    <p></p>   
+        
+    
+    <p>Why hiking? Check out the video below </p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PdCylcA_c40">
+  </iframe>
+
+  </body>
+</html>
